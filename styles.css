@@ -314,7 +314,8 @@ nav {
     top: 0;
     z-index: 100;
     padding: 0 20px;
-    height: 60px; /* Fixed height for the navbar */
+    height: 60px;/* Fixed height for the navbar */
+    display: flex;
 }
 
 nav ul {
