@@ -3,348 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venu Arvind Arangarajan </title>
+    <title>Venu Arvind Arangarajan</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="light-mode">
-    <div class="container">
-        <header>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                </button>
-            </div>
-            
-            <div class="hero">
-                <div class="hero-content">
-                    <div class="profile-picture">
-                        <img src="profile_photo.JPG" alt="Venu Arvind Arangarajan" class="profile-img">
+<body>
+    <div class="layout">
+        <aside class="sidebar">            <header class="header">
+                <h1 class="name">Venu Arvind Arangarajan</h1>
+                <p class="subtitle">Quantitative Analytics Associate (Applied ML) at JPMorgan Chase & Co.</p>
+                <img src="profile_photo.JPG" alt="Venu Arvind Arangarajan" class="profile-pic">
+                <p class="location">Plano, Texas</p>
+            </header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-                    </div>
-                    <div class="terminal">
-                        <div class="terminal-header">
-                            <div class="terminal-buttons">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="terminal-title">~/portfolio</div>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="line">
-                                <span class="prompt">$</span>
-                                <span class="command" id="typed-intro"></span>
-                            </div>
-                            <div class="output" id="output-name">
-                                <h1>Venu Arvind Arangarajan</h1>
-                                <div class="social-links">
-                                    <a href="mailto:venuarvinda066@gmail.com" aria-label="Email">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/venu-arvind-arangarajan-095432218" target="_blank" aria-label="LinkedIn">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="https://github.com/VenuArvind" target="_blank" aria-label="GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="content-column">
+    <main class="main">
+        <section id="about">
+            <h2 class="section-title">About</h2>
+            <div class="content">
+                <p>I'm a <strong>Machine Learning Engineer</strong> focused on <strong>Natural Language Processing</strong>, <strong>Computer Vision</strong>, and <strong>Deep Learning</strong>. I graduated with a Master's in Computational Data Science from Carnegie Mellon University in December 2025 and now work as a Quantitative Analytics Associate (Applied ML) at JPMorgan Chase & Co., building <strong>document intelligence</strong> systems for the Wholesale Credit Risk GenAI team. I'm passionate about developing intelligent systems that solve real-world problems.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="content">
+                <div class="edu-item">
+                    <h3>Carnegie Mellon University</h3>
+                    <p class="degree">Master of Computational Data Science</p>
+                    <p class="meta">Aug 2023 – Dec 2025 · CGPA: 4.05/4.00</p>
+                    <p class="coursework">Relevant coursework: <strong>Advanced Natural Language Processing</strong>, <strong>Cloud Computing</strong>, <strong>Speech Processing for Conversational AI</strong>, <strong>Deep Learning Systems</strong></p>
+                    <p class="teaching">Teaching Assistant – <strong>Large Language Models: Methods and Applications</strong>  (Aug–Dec 2025)</p>
+                    <p class="teaching">Teaching Assistant – <strong>Prompt Engineering</strong> (Jan–May 2025)</p>
+                </div>
+                <div class="edu-item">
+                    <h3>College of Engineering Guindy, Anna University</h3>
+                    <p class="degree">Bachelor of Technology in Information Technology</p>
+                    <p class="meta">Aug 2020 – Apr 2024 · CGPA: 9.25/10.0</p>
+                    <p class="coursework">Relevant coursework: <strong>Data Structures and Algorithms</strong>, <strong>Design and Analysis of Algorithms</strong>, <strong>Operating Systems</strong>, <strong>Computer Networks</strong>, <strong>Data Science and Analytics</strong>, <strong>Distributed and Cloud Computing</strong>, <strong>Machine Learning</strong>, <strong>Artificial Intelligence</strong>, <strong>Cryptography and Network Security</strong></p>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <nav>
-            <ul>
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <section id="about">
-                <h2><span class="section-icon">~/</span>About</h2>
-                <div class="about-content">
-                    <p>
-                        I'm an <span class="highlight"> Aspiring Machine Learning Engineer</span> with an interest in Natural Language Processing, Computer Vision, and Deep Learning. I'm currently pursuing my Master's in Computational Data Science at Carnegie Mellon University, and I'm passionate about developing intelligent systems that solve real-world problems.
-                    </p>
-                    <div class="neural-network-animation">
-                        <!-- Neural network visualization is dynamically created by JavaScript -->
-                    </div>
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="content">
+                <div class="exp-item">
+                    <p class="exp-date">February 2026 – Present</p>
+                    <h3>Quantitative Analytics Associate (Applied ML) @ JPMorgan Chase & Co.</h3>
+                    <ul>
+                        <li>Building <strong>document intelligence</strong> solutions for the Wholesale Credit Risk GenAI enablement team</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section id="education">
-                <h2><span class="section-icon">~/</span>Education</h2>
-                <div class="education-item">
-                    <div class="edu-logo cmu">
-                        <img src="CMU_Logo.jpg" alt="Carnegie Mellon University Logo">
-                    </div>
-                    <div class="edu-details">
-                        <h3>Carnegie Mellon University</h3>
-                        <p>Master of Computational Data Science</p>
-                        <p><i class="fas fa-calendar-alt"></i> Aug 2023 - Dec 2025</p>
-                        <p><i class="fas fa-star"></i> CGPA: 3.99/4.00</p>
-                        <p><i class="fas fa-book"></i> Relevant Coursework: Advanced Natural Language Processing, AI Engineering, Cloud Computing, Speech Processing for Conversational AI, Introduction to Machine Learning</p>
-                    </div>
+                <div class="exp-item">
+                    <p class="exp-date">Jun 2025 – Aug 2025</p>
+                    <h3>Quantitative Analytics Summer Associate @ JPMorgan Chase & Co.</h3>
+                    <ul>
+                        <li>Developed a low-dimensional sentence encoder (<strong>encoder-decoder transformer</strong>) that reduced embedding cost and latency while preserving <strong>semantic search</strong> accuracy for financial documents</li>
+                        <li>Integrated multimodal <strong>LLMs</strong> for chart image data extraction, enabling structured data retrieval in a document parsing pipeline</li>
+                    </ul>
                 </div>
-                <div class="education-item">
-                    <div class="edu-logo anna">
-                        <img src="Anna_University_Logo.png" alt="Anna University Logo">
-                    </div>
-                    <div class="edu-details">
-                        <h3>College of Engineering Guindy, Anna University</h3>
-                        <p>Bachelor of Technology in Information Technology</p>
-                        <p><i class="fas fa-calendar-alt"></i> Aug 2020 - Apr 2024</p>
-                        <p><i class="fas fa-star"></i> CGPA: 9.25/10.0</p>
-                        <p><i class="fas fa-book"></i> Relevant Coursework: Data Structures and Algorithms,Design and Analysis of Algorithms, Operating Systems, Computer Networks, Data Science and Analytics, Distributed and Cloud Computing, Machine Learning, Artificial Intelligence, Cryptography and Network Security</p>
-                    </div>
+                <div class="exp-item">
+                    <p class="exp-date">Jun 2023 – Aug 2023</p>
+                    <h3>Software Developer Intern @ Barclays</h3>
+                    <ul>
+                        <li>Deployed an Interactive Voice Response (IVR) system using <strong>Amazon Connect</strong> and <strong>AWS</strong></li>
+                        <li>Built and integrated an <strong>AWS Lex</strong> chatbot to route customer inquiries to support agents</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section id="experience">
-                <h2><span class="section-icon">~/</span>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>August 2025 - Present</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Teaching Assistant - Large Language Models methods and applications</h3>
-                            <h4>Carnegie Mellon University - Language Technologies Institute</h4>
-                            <ul>
-                                <li>Lead TA for mini project</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>June 2025 - August 2025</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Quantitative Analytics Summer Associate</h3>
-                            <h4>JP Morgan Chase and Co.</h4>
-                            <ul>
-                                <li>Developed a low-dimensional sentence encoder built on an encoder-decoder transformer architecture, reducing embedding
-costs and latency while preserving semantic search and retrieval accuracy for financial documents</li>
-                                <li>Integrated multi-modal LLMs for chart image data extraction, allowing structured information retrieval from charts as part of
-a document parsing pipeline</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>Jan 2025 - May 2025</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Teaching Assistant - Prompt Engineering</h3>
-                            <h4>Carnegie Mellon University</h4>
-                            <ul>
-                                <li>Conducted recitations on Decomposed Prompting and Prompting for Code Generation</li>
-                                <li>Guided 34 students through office hours in prompt optimization</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>Jun 2023 - Aug 2023</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Developer Intern</h3>
-                            <h4>Barclays</h4>
-                            <ul>
-                                <li>Deployed an Interactive Voice Response system via Amazon Connect and AWS</li>
-                                <li>Created a Chatbot with AWS Lex to enable communication between customers and agents</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>Jul 2022 - Aug 2022</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Intern</h3>
-                            <h4>Wipro Ltd.</h4>
-                            <ul>
-                                <li>Employed BeautifulSoup and Selenium to collect data on Nifty50 stocks</li>
-                                <li>Engineered an LSTM model to predict the next day's stock price with 80% accuracy</li>
-                                <li>Designed a web application to display users' stock portfolio details</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">
-                            <span>Aug 2021 - Nov 2021</span>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Project Intern</h3>
-                            <h4>Nextwave Multimedia</h4>
-                            <ul>
-                                <li>Created a functional multiplayer game using Unity and C#, leveraging mobile device sensors like gyroscope and accelerometer for character movement control across terrain</li>
-                                <li>Implemented real-time multiplayer support using Unity's real-time servers, ensuring seamless gameplay and synchronization across devices</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="exp-item">
+                    <p class="exp-date">Jul 2022 – Aug 2022</p>
+                    <h3>Software Engineering Intern @ Wipro Ltd.</h3>
+                    <ul>
+                        <li>Used <strong>BeautifulSoup</strong> and <strong>Selenium</strong> to scrape Nifty 50 stock data; built an <strong>LSTM</strong> model for next-day price prediction (~80% directional accuracy)</li>
+                        <li>Designed a <strong>web application</strong> to visualize user stock portfolios</li>
+                    </ul>
                 </div>
-            </section>
-
-            <section id="projects">
-                <h2><span class="section-icon">~/</span>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-database"></i>
-                            <h3>NL2SQL</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Currently working on a multi-agent Text-to-SQL framework to improve query accuracy on the SPIDER 2.0 leaderboard.</p>
-                            <p>Currently focusing on improving the baseline for Relevant Schema retrieval using multi-agent workflows</p>
-                            <div class="project-technologies">
-                                <span>LLMs</span>
-                                <span>Multi-agent workflows</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-building"></i>
-                            <h3>Construction Life-Cycle Management</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Created a chatbot leveraging Llama2 LLM to answer queries regarding construction</p>
-                            <p>Implemented a foundation recommendation system using XGBoost</p>
-                            <p>Developed custom 3D mesh generation modules for indoor and outdoor visualization of a building</p>
-                            <p>Performed instance segmentation using Detectron-2, labeling building components to conduct urban surveys</p>
-                            <p>Designed an Image Processing pipeline via OpenCV to assess the solar panel placement feasibility of buildings</p>
-
-                            <div class="project-technologies">
-                                <span>XGBoost</span>
-                                <span>Computer Vision</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Chunked CodeRAG</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Improved CodeRAG-Bench using fixed-size and semantic pre-retrieval chunking.</p>
-                            <p>Obtained an improvement of ~31% on the baseline using the ODEX open-domain coding tasks dataset.</p>
-                            <div class="project-technologies">
-                                <span>RAG</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-heartbeat"></i>
-                            <h3>HealthWagon</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Trained a RandomForest Classifier for Fall detection, utilizing smartphone accelerometer and gyroscope data.</p>
-                            <p>Implemented a specialized Question Answering chatbot to answer questions regarding health reports.</p>
-                            <p>Built a Named Entity Recognition system using spaCy to identify medical terms in health reports.</p>
-                            <div class="project-technologies">
-                                <span>RandomForest</span>
-                                <span>spaCy</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-microphone-alt"></i>
-                            <h3>AccentVision</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Developed AccentVision, a multimodal QA system with accent adaptive speech recognition and speech response generation, with visual inputs.</p>
-                            <p>Improved ASR accuracy by 14.2% and TTS quality (↑0.8 MOS) using accent-aware processing for low-resource African English accents.</p>
-                            <div class="project-technologies">
-                                <span>ASR</span>
-                                <span>TTS</span>
-                                <span>Vision</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-microphone-alt"></i>
-                            <h3>CtrlAltCompose</h3>
-                        </div>
-                        <div class="project-body">
-                            <p>Built a generative music system using LlamaIndex and a multi-agent framework consisting of Melody, Harmony, Rhythm, Arrangement, and Critique agents.</p>
-                            <p>Implemented inter-agent communication using LLM-based agent orchestration and context-passing via dynamic memory modules in LlamaIndex.</p>
-                            <div class="project-technologies">
-                                <span>LlamaIndex</span>
-                                <span>Multi-agent workflows</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="exp-item">
+                    <p class="exp-date">Aug 2021 – Nov 2021</p>
+                    <h3>Project Intern @ Nextwave Multimedia</h3>
+                    <ul>
+                        <li>Built a multiplayer game in <strong>Unity</strong> (<strong>C#</strong>) using device gyroscope and accelerometer for motion-based character control</li>
+                        <li>Implemented real-time multiplayer sync via <strong>Unity</strong> networking for cross-device gameplay</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="skills">
-                <h2><span class="section-icon">~/</span>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-cloud">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>ML/AI</h3>
-                        <div class="skill-items">
-                            <div class="skill-cloud">
-                                <span class="skill-tag">Machine Learning</span>
-                                <span class="skill-tag">Deep Learning</span>
-                                <span class="skill-tag">Natural Language Processing</span>
-                                <span class="skill-tag">Computer Vision</span>
-                                <span class="skill-tag">Data Analysis</span>
-                                <span class="skill-tag">REST API Development</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frameworks</h3>
-                        <div class="skill-cloud">
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">LlamaIndex</span>
-                            <span class="skill-tag">LangChain</span>
-                            <span class="skill-tag">LangGraph</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">NLTK</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Azure</span>
-                            <span class="skill-tag">GCP</span>
-                            <span class="skill-tag">MLFlow</span>
-                        </div>
-                    </div>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="content">
+                <div class="project-item">
+                    <h3>NL2SQL</h3>
+                    <p><strong>Multi-agent</strong> Text-to-SQL framework targeting the SPIDER 2.0 benchmark. Improved relevant schema retrieval and end-to-end query accuracy using <strong>multi-agent</strong> workflows.</p>
+                    <p class="tags">LLMs · Multi-agent workflows</p>
                 </div>
-            </section>
-        </main>
+                <div class="project-item">
+                    <h3>Construction Life-Cycle Management</h3>
+                    <p><strong>Llama2</strong>-based chatbot for construction-domain Q&A; <strong>XGBoost</strong> foundation recommendation system; custom <strong>3D mesh</strong> generation for building visualization. <strong>Instance segmentation</strong> with <strong>Detectron2</strong> for building component labeling and urban surveys; <strong>OpenCV</strong> pipeline for solar panel placement feasibility.</p>
+                    <p class="tags">Llama2 · XGBoost · Detectron2 · OpenCV</p>
+                </div>
+                <div class="project-item">
+                    <h3>Chunked CodeRAG</h3>
+                    <p>Improved CodeRAG-Bench (<strong>RAG</strong>) with fixed-size and <strong>semantic</strong> pre-retrieval chunking. Achieved ~31% improvement over baseline on the ODEX open-domain coding benchmark.</p>
+                    <p class="tags">RAG · Code generation</p>
+                </div>
+                <div class="project-item">
+                    <h3>HealthWagon</h3>
+                    <p><strong>Random Forest</strong> classifier for fall detection using smartphone accelerometer and gyroscope data; QA chatbot for health report questions; <strong>spaCy</strong>-based <strong>NER</strong> for medical terms in reports.</p>
+                    <p class="tags">Random Forest · spaCy · NER</p>
+                </div>
+                <div class="project-item">
+                    <h3>AccentVision</h3>
+                    <p><strong>Multimodal</strong> QA system with accent-adaptive <strong>ASR</strong> and <strong>TTS</strong> plus visual inputs. Improved ASR by 14.2% and TTS quality (↑0.8 MOS) for low-resource African English accents.</p>
+                    <p class="tags">ASR · TTS · Multimodal</p>
+                </div>
+                <div class="project-item">
+                    <h3>CtrlAltCompose</h3>
+                    <p>Generative music system with <strong>LlamaIndex</strong>: <strong>multi-agent</strong> framework (Melody, Harmony, Rhythm, Arrangement, Critique), <strong>LLM</strong> orchestration, and dynamic memory for context passing.</p>
+                    <p class="tags">LlamaIndex · Multi-agent · LLMs</p>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; <span id="current-year"></span> Venu Arvind Arangarajan. All rights reserved.</p>
-        </footer>
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="content">
+                <p><strong>Languages:</strong> <strong>Python</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>SQL</strong></p>
+                <p><strong>ML/AI:</strong> <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, <strong>NLP</strong>, <strong>Computer Vision</strong>, <strong>Data Analysis</strong></p>
+                <p><strong>Frameworks & tools:</strong> <strong>PyTorch</strong>, <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, <strong>Hugging Face</strong>, <strong>LlamaIndex</strong>, <strong>LangChain</strong>, <strong>LangGraph</strong>, <strong>NumPy</strong>, <strong>Pandas</strong>, <strong>Flask</strong>, <strong>OpenCV</strong>, <strong>NLTK</strong>, <strong>MongoDB</strong>, <strong>AWS</strong>, <strong>Azure</strong>, <strong>GCP</strong>, <strong>MLFlow</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Contact: <a href="mailto:venuarvinda066@gmail.com">venuarvinda066@gmail.com</a></p>
+        <p class="links">
+            <a href="https://www.linkedin.com/in/venu-arvind-arangarajan-095432218" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://github.com/VenuArvind" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <p>&copy; <span id="current-year"></span> Venu Arvind Arangarajan</p>
+    </footer>
+        </div>
     </div>
-    
+
     <script src="main.js"></script>
 </body>
 </html>
