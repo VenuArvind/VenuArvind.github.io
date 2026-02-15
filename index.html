@@ -4,18 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venu Arvind Arangarajan</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Critical layout so page works even if external CSS is slow or blocked */
-        body { margin: 0; color: #333; background: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
-        .layout { display: flex; flex-direction: row; min-height: 100vh; max-width: 1400px; margin: 0 auto; }
-        .sidebar { width: 380px; flex-shrink: 0; padding: 2rem; box-sizing: border-box; border-right: 1px solid #ddd; }
-        .content-column { flex: 1; min-width: 0; padding: 2rem 2.5rem 3rem; box-sizing: border-box; }
-        @media (max-width: 900px) {
-            .layout { flex-direction: column; }
-            .sidebar { width: 100%; border-right: none; border-top: 1px solid #ddd; }
-        }
+:root{--text:#333;--text-muted:#666;--link:#0066cc;--link-hover:#004499;--border:#ddd;--bg:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:var(--bg);margin:0;padding:0}
+.layout{display:flex;flex-direction:row;min-height:100vh;max-width:1400px;margin:0 auto}
+.content-column{flex:1;min-width:0;padding:2rem 2.5rem 3rem}
+.sidebar{width:380px;flex-shrink:0;padding:2rem 2rem 3rem;position:sticky;top:0;height:fit-content;max-height:100vh;border-right:1px solid var(--border);box-sizing:border-box}
+.header{text-align:center;margin-bottom:1.5rem}
+.name{font-family:'Libre Baskerville',Georgia,serif;font-size:1.5rem;font-weight:700;margin-bottom:0.25rem;line-height:1.3}
+.subtitle{font-size:0.95rem;color:var(--text-muted);margin-bottom:1rem}
+.profile-pic{max-width:100%;height:auto;border-radius:50%;object-fit:cover;margin:0 auto 0.5rem;display:block}
+.location{font-size:0.95rem;color:var(--text-muted)}
+.nav{padding-top:1rem;border-top:1px solid var(--border)}
+.nav ul{list-style:none}
+.nav li{margin-bottom:0.5rem}
+.nav a{color:var(--text);text-decoration:none;font-weight:600}
+.nav a:hover,.nav a.active{color:var(--link)}
+.main{margin-bottom:2.5rem}
+.section-title{font-family:'Libre Baskerville',Georgia,serif;font-size:1.25rem;font-weight:700;margin-bottom:1rem;color:var(--text)}
+.content{margin-bottom:2rem}
+.content p{margin-bottom:0.75rem}
+.content p:last-child{margin-bottom:0}
+.edu-item{margin-bottom:1.5rem}
+.edu-item:last-child{margin-bottom:0}
+.edu-item h3{font-size:1.05rem;font-weight:600;margin-bottom:0.25rem}
+.edu-item .degree{font-weight:600;color:var(--text)}
+.edu-item .meta,.edu-item .coursework{font-size:0.95rem;color:var(--text-muted)}
+.edu-item .teaching{font-size:0.95rem;color:var(--text-muted);margin-top:0.5rem}
+.exp-item{margin-bottom:1.5rem}
+.exp-item:last-child{margin-bottom:0}
+.exp-date{font-size:0.9rem;color:var(--text-muted);margin-bottom:0.2rem}
+.exp-item h3{font-size:1.05rem;font-weight:600;margin-bottom:0.4rem}
+.exp-item ul{margin-left:1.25rem;margin-bottom:0}
+.exp-item li{margin-bottom:0.25rem}
+.project-item{margin-bottom:1.5rem}
+.project-item:last-child{margin-bottom:0}
+.project-item h3{font-size:1.05rem;font-weight:600;margin-bottom:0.35rem}
+.project-item p{margin-bottom:0.35rem}
+.project-item .tags{font-size:0.9rem;color:var(--text-muted)}
+#skills .content p{margin-bottom:0.5rem}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline;color:var(--link-hover)}
+.footer a{color:var(--link)}
+.footer{padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;font-size:0.95rem;color:var(--text-muted)}
+.footer p{margin-bottom:0.4rem}
+.footer .links{margin-bottom:0.5rem}
+.footer .links a{color:var(--link)}
+@media (max-width:900px){
+.layout{flex-direction:column}
+.sidebar{width:100%;max-height:none;position:static;border-right:none;border-top:1px solid var(--border);padding:1.5rem 2rem;order:-1}
+.content-column{padding:1.5rem 1.5rem 2rem}
+.nav ul{display:flex;flex-wrap:wrap;gap:1rem}
+.nav li{margin-bottom:0}
+}
     </style>
 </head>
 <body>

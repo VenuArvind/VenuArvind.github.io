@@ -77,11 +77,12 @@ body {
 }
 
 .profile-pic {
-    width: 320px;
-    height: 320px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0.5rem;
+    margin: 0 auto 0.5rem;
+    display: block;
 }
 
 .location {
