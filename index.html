@@ -6,6 +6,17 @@
     <title>Venu Arvind Arangarajan</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Critical layout so page works even if external CSS is slow or blocked */
+        body { margin: 0; color: #333; background: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+        .layout { display: flex; flex-direction: row; min-height: 100vh; max-width: 1400px; margin: 0 auto; }
+        .sidebar { width: 380px; flex-shrink: 0; padding: 2rem; box-sizing: border-box; border-right: 1px solid #ddd; }
+        .content-column { flex: 1; min-width: 0; padding: 2rem 2.5rem 3rem; box-sizing: border-box; }
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; border-right: none; border-top: 1px solid #ddd; }
+        }
+    </style>
 </head>
 <body>
     <div class="layout">
@@ -43,7 +54,7 @@
                     <p class="degree">Master of Computational Data Science</p>
                     <p class="meta">Aug 2023 – Dec 2025 · CGPA: 4.05/4.00</p>
                     <p class="coursework">Relevant coursework: <strong>Advanced Natural Language Processing</strong>, <strong>Cloud Computing</strong>, <strong>Speech Processing for Conversational AI</strong>, <strong>Deep Learning Systems</strong></p>
-                    <p class="teaching">Teaching Assistant – <strong>Large Language Models: Methods and Applications</strong>  (Aug–Dec 2025)</p>
+                    <p class="teaching">Teaching Assistant – <strong>Large Language Model methods and applications</strong> (Aug–Dec 2025)</p>
                     <p class="teaching">Teaching Assistant – <strong>Prompt Engineering</strong> (Jan–May 2025)</p>
                 </div>
                 <div class="edu-item">
