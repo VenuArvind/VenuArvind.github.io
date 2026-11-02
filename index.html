@@ -66,7 +66,7 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
     <div class="layout">
         <aside class="sidebar">            <header class="header">
                 <h1 class="name">Venu Arvind Arangarajan</h1>
-                <p class="subtitle">Quantitative Analytics Associate (Applied ML) at JPMorgan Chase & Co.</p>
+                <p class="subtitle">Applied AI/ML Engineer at JPMorgan Chase & Co.</p>
                 <img src="profile_photo.JPG" alt="Venu Arvind Arangarajan" class="profile-pic">
                 <p class="location">Plano, Texas</p>
             </header>
@@ -75,6 +75,7 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
                     <li><a href="#about" class="active">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                 </ul>
@@ -86,7 +87,7 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
         <section id="about">
             <h2 class="section-title">About</h2>
             <div class="content">
-                <p>I'm a <strong>Machine Learning Engineer</strong> focused on <strong>Natural Language Processing</strong>, <strong>Computer Vision</strong>, and <strong>Deep Learning</strong>. I graduated with a Master's in Computational Data Science from Carnegie Mellon University in December 2025 and now work as a Quantitative Analytics Associate (Applied ML) at JPMorgan Chase & Co. I'm passionate about developing intelligent systems that solve real-world problems.</p>
+                <p>I'm a <strong>Machine Learning Engineer</strong> focused on <strong>Natural Language Processing</strong>, <strong>Computer Vision</strong>, and <strong>Deep Learning</strong>. I graduated with a Master's in Computational Data Science from Carnegie Mellon University in December 2025 and now work as an Applied AI/ML Engineer at JPMorgan Chase & Co. I'm passionate about developing intelligent systems that solve real-world problems.</p>
             </div>
         </section>
 
@@ -96,7 +97,7 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
                 <div class="edu-item">
                     <h3>Carnegie Mellon University</h3>
                     <p class="degree">Master of Computational Data Science</p>
-                    <p class="meta">Aug 2023 – Dec 2025 · CGPA: 4.05/4.00</p>
+                    <p class="meta">Aug 2024 – Dec 2025 · CGPA: 4.05/4.00</p>
                     <p class="coursework">Relevant coursework: <strong>Advanced Natural Language Processing</strong>, <strong>Cloud Computing</strong>, <strong>Speech Processing for Conversational AI</strong>, <strong>Deep Learning Systems</strong></p>
                     <p class="teaching">Teaching Assistant – <strong>Large Language Model methods and applications</strong> (Aug–Dec 2025)</p>
                     <p class="teaching">Teaching Assistant – <strong>Prompt Engineering</strong> (Jan–May 2025)</p>
@@ -104,7 +105,7 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
                 <div class="edu-item">
                     <h3>College of Engineering Guindy, Anna University</h3>
                     <p class="degree">Bachelor of Technology in Information Technology</p>
-                    <p class="meta">Aug 2020 – Apr 2024 · CGPA: 9.25/10.0</p>
+                    <p class="meta">Nov 2020 – May 2024 · CGPA: 9.25/10.0</p>
                     <p class="coursework">Relevant coursework: <strong>Data Structures and Algorithms</strong>, <strong>Design and Analysis of Algorithms</strong>, <strong>Operating Systems</strong>, <strong>Computer Networks</strong>, <strong>Data Science and Analytics</strong>, <strong>Distributed and Cloud Computing</strong>, <strong>Machine Learning</strong>, <strong>Artificial Intelligence</strong>, <strong>Cryptography and Network Security</strong></p>
                 </div>
             </div>
@@ -115,14 +116,14 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
             <div class="content">
                 <div class="exp-item">
                     <p class="exp-date">February 2026 – Present</p>
-                    <h3>Quantitative Analytics (Applied ML) Associate @ JPMorgan Chase & Co.</h3>
+                    <h3>Applied AI/ML Engineer @ JPMorgan Chase & Co.</h3>
                     <ul>
                         <li>Building <strong>document intelligence</strong> solutions for the Wholesale Credit Risk GenAI enablement team</li>
                     </ul>
                 </div>
                 <div class="exp-item">
                     <p class="exp-date">Jun 2025 – Aug 2025</p>
-                    <h3>Quantitative Analytics (Applied ML) Summer Associate @ JPMorgan Chase & Co.</h3>
+                    <h3>Applied AI/ML Engineer Intern @ JPMorgan Chase & Co.</h3>
                     <ul>
                         <li>Developed a low-dimensional sentence encoder (<strong>encoder-decoder transformer</strong>) that reduced embedding cost and latency while preserving <strong>semantic search</strong> accuracy for financial documents</li>
                         <li>Integrated multimodal <strong>LLMs</strong> for chart image data extraction, enabling structured data retrieval in a document parsing pipeline</li>
@@ -155,13 +156,40 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
             </div>
         </section>
 
+        <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <div class="content">
+                <div class="project-item">
+                    <h3>Modeling Distinct Human Interaction in Web Agents</h3>
+                    <p><strong>EMNLP Findings 2026</strong></p>
+                    <p>Engineered intervention-aware web agents using <strong>supervised fine-tuning</strong> for step-wise binary classification, improving human intervention prediction accuracy by 61–63% and increasing user satisfaction by 26.5%.</p>
+                    <p class="tags">Web Agents · Supervised Fine-Tuning · Human-AI Interaction · EMNLP</p>
+                </div>
+            </div>
+        </section>
+
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="content">
                 <div class="project-item">
-                    <h3>NL2SQL</h3>
-                    <p><strong>Multi-agent</strong> workflow using <strong>LangChain</strong> and <strong>LangGraph</strong>, improving SQL generation accuracy on the <strong>SPIDER 2.0 Lite</strong> benchmark, achieving 40% accuracy for SQLite queries (leaderboard toppers at 55%). Leverages an error-classification-based query correction loop and a <strong>multi-agent</strong> workflow for schema retrieval.</p>
-                    <p class="tags">LangChain · LangGraph · Multi-agent</p>
+                    <h3>AegisPlan: Architectural Systems Copilot</h3>
+                    <p>Designed and deployed a <strong>neuro-symbolic</strong> pipeline combining a <strong>GRPO</strong>-trained LLM with <strong>CP-SAT</strong> solvers to generate zero-overlap hospital and 20 MW AI data center layouts, reducing spatial collisions from 21.4% to 1.2%, and served the system on-device as a 5.5GB quantized <strong>GGUF</strong> via <strong>FastAPI</strong>.</p>
+                    <p class="tags">Python · PyTorch · CP-SAT · FastAPI · GGUF</p>
+                </div>
+                <div class="project-item">
+                    <h3>IRKit: Distributed Hybrid Search Engine</h3>
+                    <p>Decreased P95 search retrieval latency by a factor of 8.2x while maintaining high-recall semantic matching capabilities, by engineering a distributed hybrid search engine utilizing <strong>Redis sharding</strong>, <strong>consistent hashing</strong> for virtual nodes, and a two-stage <strong>FAISS</strong> Cross-Encoder pipeline.</p>
+                    <p class="tags">Python · Redis · FAISS · FastAPI · Consistent Hashing</p>
+                </div>
+                <div class="project-item">
+                    <h3>LensCoach: Low-Latency On-Device Inference</h3>
+                    <p>Designed and developed an accessible mobile application achieving real-time photographic critique generation at <strong>30+ FPS</strong> while strictly constraining maximum runtime footprint to under 1.5GB of unified memory via 4-bit quantized LLM deployment using <strong>memory-mapped (mmap)</strong> inference.</p>
+                    <p class="tags">C++ · Python · GGUF · On-Device ML</p>
+                </div>
+                <div class="project-item">
+                    <h3>Text-to-SQL Query Engine</h3>
+                    <p>Achieved 40% Execution Accuracy on the highly complex <strong>Spider 2.0 Lite</strong> enterprise text-to-SQL benchmark against schemas exceeding 3,000 columns, by building an execution-guided error recovery loop to validate and correct generated SQL queries against massive enterprise databases using a <strong>multi-agent</strong> workflow.</p>
+                    <p class="tags">Python · LangChain · LangGraph · Multi-agent · Execution-Guided Recovery</p>
                 </div>
                 <div class="project-item">
                     <h3>Construction Life-Cycle Management</h3>
@@ -194,17 +222,18 @@ a:hover{text-decoration:underline;color:var(--link-hover)}
         <section id="skills">
             <h2 class="section-title">Skills</h2>
             <div class="content">
-                <p><strong>Languages:</strong> <strong>Python</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>SQL</strong></p>
-                <p><strong>ML/AI:</strong> <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, <strong>NLP</strong>, <strong>Computer Vision</strong>, <strong>Data Analysis</strong></p>
-                <p><strong>Frameworks & tools:</strong> <strong>PyTorch</strong>, <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, <strong>Hugging Face</strong>, <strong>LlamaIndex</strong>, <strong>LangChain</strong>, <strong>LangGraph</strong>, <strong>NumPy</strong>, <strong>Pandas</strong>, <strong>Flask</strong>, <strong>OpenCV</strong>, <strong>NLTK</strong>, <strong>MongoDB</strong>, <strong>AWS</strong>, <strong>Azure</strong>, <strong>GCP</strong>, <strong>MLFlow</strong></p>
+                <p><strong>Languages:</strong> <strong>Python</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>SQL</strong>, <strong>Data Structures & Algorithms</strong></p>
+                <p><strong>AI & ML Systems:</strong> <strong>PyTorch</strong>, <strong>TensorFlow</strong>, <strong>vLLM</strong>, <strong>On-device ML</strong>, <strong>RAG</strong>, <strong>Deep Learning</strong>, <strong>NLP</strong>, <strong>Computer Vision</strong></p>
+                <p><strong>Systems, Environments & Tools:</strong> <strong>Linux</strong>, <strong>Redis</strong>, <strong>Docker</strong>, <strong>GCP</strong>, <strong>AWS</strong>, <strong>Git</strong>, <strong>AI Productivity Tools (Copilot, Claude Code)</strong></p>
+                <p><strong>Backend & Frameworks:</strong> <strong>FastAPI</strong>, <strong>Flask</strong>, <strong>React</strong>, <strong>REST</strong>, <strong>LangChain</strong>, <strong>LangGraph</strong>, <strong>LlamaIndex</strong></p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>Contact: <a href="mailto:venuarvinda066@gmail.com">venuarvinda066@gmail.com</a></p>
+        <p>Contact: <a href="mailto:arvind19rajan@gmail.com">arvind19rajan@gmail.com</a></p>
         <p class="links">
-            <a href="https://www.linkedin.com/in/venu-arvind-arangarajan-095432218" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://www.linkedin.com/in/venuarvindarangarajan" target="_blank" rel="noopener">LinkedIn</a> ·
             <a href="https://github.com/VenuArvind" target="_blank" rel="noopener">GitHub</a>
         </p>
         <p>&copy; <span id="current-year"></span> Venu Arvind Arangarajan</p>
